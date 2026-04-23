@@ -1,0 +1,11 @@
+{
+  "name": "Local Code Workshop",
+  "short_name": "CodeWorkshop",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1e1e1e",
+  "theme_color": "#007acc",
+  "permissions": [
+    "fileSystemAccess"
+  ]
+}
