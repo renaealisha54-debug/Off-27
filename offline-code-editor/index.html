@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Offline Code Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button id="openBtn">Open File</button>
+        <button id="saveBtn">Save File</button>
+        <span id="fileName">No file selected</span>
+    </div>
+    <textarea id="editor" placeholder="Start coding here..."></textarea>
+    
+    <script>
+        // Register the Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('js/sw.js');
+        }
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>
